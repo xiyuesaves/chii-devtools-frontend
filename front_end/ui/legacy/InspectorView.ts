@@ -505,7 +505,7 @@ export class InspectorView extends VBox implements ViewLocationResolver {
 }
 
 function getDisableLocaleInfoBarSetting(): Common.Settings.Setting<boolean> {
-  return Common.Settings.Settings.instance().createSetting('disableLocaleInfoBar', false);
+  return Common.Settings.Settings.instance().createSetting('disableLocaleInfoBar', true);
 }
 
 function shouldShowLocaleInfobar(): boolean {
